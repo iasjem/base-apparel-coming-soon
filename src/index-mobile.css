@@ -39,4 +39,6 @@
     h1 { font-size: 36px; }
 
     .input-email-container { width: 85%; }
+
+    #modal-email-success { width: 80%; }
 }
