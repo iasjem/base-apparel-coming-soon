@@ -20,8 +20,11 @@ btnSendEmail.addEventListener('click', function () {
     let email = inputEmail.value;
     let isTaggedInvalid = inputEmail.classList.contains('invalid-email');
     let isValidEmail = /([A-z]{1,}|[A-z]{2,}_[A-z0-9]{1,})@([a-z]{3,15})\.([a-z]{2,5})$/.test(email);
+    let modalEmailSuccess = $('#modal-email-success').modal('show');
 
-    if (isTaggedInvalid == false && isValidEmail == false) {
+    if (isValidEmail == true) {
+        modalEmailSuccess.modal('show');
+    } else if (isTaggedInvalid == false && isValidEmail == false) {
         inputEmail.classList.add('invalid-email');
         spanInvalidEmailMessage.style.display = "block";
         iconInvalidEmail.style.display = "block";
@@ -29,6 +32,8 @@ btnSendEmail.addEventListener('click', function () {
         inputEmail.classList.remove('invalid-email');
         spanInvalidEmailMessage.style.display = "none";
         iconInvalidEmail.style.display = "none";
+
+        modalEmailSuccess.modal('show');
     } else {
         // do nothing
     }
