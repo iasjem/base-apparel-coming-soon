@@ -1,0 +1,42 @@
+.logo-container-mobile {
+    padding: 20px 20px 30px 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .image-showing {
+        height: 80vh;
+        width: 100%;
+        background-image: url('../images/hero-mobile.jpg');
+    }
+
+    .content-container { margin: 80px 20px 140px 20px; }
+
+    .intro-message { text-align: center; }
+
+    h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .input-email-container {
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    body { font-size: 14px; }
+
+    .image-showing { height: 50vh; }
+
+    .intro-container {
+        margin: 0;
+        width: 100%;
+    }
+
+    .content-container { margin: 60px 15px 120px 15px; }
+
+    h1 { font-size: 36px; }
+
+    .input-email-container { width: 85%; }
+}
