@@ -50,6 +50,7 @@ h1 .highlight {
   position: relative;
   border-radius: 20px;
   border-color: hsl(0, 80%, 86%);
+  margin-bottom: 0 !important;
 }
 
 .input-email-container button {
@@ -67,10 +68,6 @@ h1 .highlight {
 .input-email-container button:focus {
   outline: none;
   box-shadow:none !important;
-}
-
-.input-email-container .form-control:focus {
-  border:1px solid hsl(0, 80%, 86%) !important;
 }
 
 .input-email-container button:hover,
@@ -98,6 +95,22 @@ h1 .highlight {
 .form-control:-moz-placeholder { /* Firefox 18- */
   font-size: 14px;
   color: hsl(0, 80%, 86%);
+}
+
+.invalid-email { border: 1px solid red !important; }
+
+#span_invalid_email {
+  display: none;
+  margin: 10px 0 0 20px;
+  font-size: 12px;
+  color: hsl(0, 93%, 68%);
+}
+
+#icon_invalid_email {
+  display: none;
+  position: absolute;
+  top: 11.5px;
+  right: 88px;
 }
 
 @media only screen and (min-width: 1200px) {
