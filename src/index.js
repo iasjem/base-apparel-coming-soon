@@ -19,7 +19,7 @@ btnSendEmail.addEventListener('click', function () {
     let email = inputEmail.value;
     let isTaggedInvalid = inputEmail.classList.contains('invalid-email');
     let isValidEmail = /([A-z]{1,}|[A-z]{2,}_[A-z0-9]{1,})@([a-z]{3,15})\.([a-z]{2,5})$/.test(email);
-    let modalEmailSuccess = $('#modal-email-success').modal('show');
+    let modalEmailSuccess = $('#modal-email-success');
 
     if (isValidEmail == true) {
         modalEmailSuccess.modal('show');
