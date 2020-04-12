@@ -17,6 +17,44 @@
   <title>Base Apparel | Sample Landing Page</title>
 </head>
 <body>
-
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col logo-container-mobile d-sm-block d-md-none d-lg-none d-xl-none order-sm-first order-first">
+        <a href="#"><img src="images/logo.svg" alt="company logo" /></a>
+      </div>
+      <div class="col order-md-first order-sm-last order-last content-showing">
+        <div class="intro-container">
+          <div class="logo-container d-none d-md-block">
+            <a href="#"><img src="images/logo.svg" alt="company logo" /></a>
+          </div>
+          <div class="content-container">
+            <h1>We're <span class="highlight"><br/>coming <br/>soon</span></h1>
+            <p class="intro-message">Hello fellow shoppers! We're currently building our new fashion store. 
+              Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            <div class="input-email-container">
+              <input id="input_email" type="text" class="form-control mb-3" maxlength="50" placeholder="Email Address" />
+              <span id="icon_invalid_email"><img src="./images/icon-error.svg" alt="invalid email icon" /></span>
+              <button id="btn_send_email" class="btn btn-default" type="submit"><img src="images/icon-arrow.svg" /></button>
+              <span id="span_invalid_email">Please provide a valid email</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-1 d-none d-md-block"></div>
+      <div class="col-md-4 col-sm-12 order-md-last order-sm-1 order-1 image-showing"></div>
+    </div>
+  </div>
+  <div class="modal" id="modal-email-success">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <h2>Success</h2>
+          <p>You have entered a correct email!</p>
+          <button class="btn btn-primary" data-dismiss="modal">Thanks!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="src/index.js"></script>
 </body>
 </html>

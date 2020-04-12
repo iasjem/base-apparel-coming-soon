@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+body {
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+.image-showing {
+  height: 100vh;
+  background-image: url('../images/hero-desktop.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.content-showing { background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); }
+
+.intro-container {
+  margin: 30px auto;
+  width: 80%;
+}
+
+.content-container { margin-top: 70px; }
+
+.intro-message {
+  margin-bottom: 35px;
+  line-height: 1.5rem;
+  color: hsl(0, 36%, 70%);
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+  font-size: 64px;
+}
+
+h1 .highlight {
+  color: hsl(0, 6%, 24%);
+  font-weight: 600;
+}
+
+.input-email-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-email-container .form-control {
+  position: relative;
+  border-radius: 20px;
+  border-color: hsl(0, 80%, 86%);
+  margin-bottom: 0 !important;
+}
+
+.input-email-container button {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 80px;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)) !important;
+  border-radius: 40px;
+  border-color: none;
+  box-shadow: 0px 15px 15px rgba(248, 191, 191, 0.6);
+}
+
+.input-email-container .form-control:focus,
+.input-email-container button:focus {
+  outline: none;
+  box-shadow:none !important;
+}
+
+.input-email-container button:hover,
+.input-email-container button:active {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%)) !important;
+  box-shadow: 0px 10px 10px 5px rgba(248, 191, 191, 0.6) !important;
+}
+
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 14px;
+  opacity: 1;
+  color: hsl(0, 80%, 86%);
+}
+
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  font-size: 14px;
+  color: hsl(0, 80%, 86%);
+}
+
+.form-control:-ms-input-placeholder { /* IE 10+ */
+  font-size: 14px;
+  color: hsl(0, 80%, 86%);
+}
+
+.form-control:-moz-placeholder { /* Firefox 18- */
+  font-size: 14px;
+  color: hsl(0, 80%, 86%);
+}
+
+.invalid-email { border: 1px solid red !important; }
+
+#span_invalid_email {
+  display: none;
+  margin: 10px 0 0 20px;
+  font-size: 12px;
+  color: hsl(0, 93%, 68%);
+}
+
+#icon_invalid_email {
+  display: none;
+  position: absolute;
+  top: 11.5px;
+  right: 88px;
+}
+
+#modal-email-success {
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#modal-email-success .modal-body { padding: 40px 15px; }
+
+#modal-email-success .modal-body h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: hsl(0, 6%, 24%);
+}
+
+#modal-email-success .modal-body p { color: hsl(0, 36%, 70%); }
+
+#modal-email-success .modal-body button {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%)) !important;
+  border: none;
+}
+
+#modal-email-success .modal-body button:focus {
+  outline: none;
+  box-shadow:none !important;
+}
+
+@media only screen and (min-width: 1200px) {
+    .content-container { margin-top: 60px; }
+}
