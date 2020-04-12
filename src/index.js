@@ -7,7 +7,6 @@ inputEmail.addEventListener('keydown', function () {
     let isTaggedInvalid = inputEmail.classList.contains('invalid-email');
 
     if (isTaggedInvalid == true) {
-        console.log('alright')
         inputEmail.classList.remove('invalid-email');
         spanInvalidEmailMessage.style.display = "none";
         iconInvalidEmail.style.display = "none";
