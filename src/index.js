@@ -43,6 +43,14 @@ inputEmail.addEventListener('keydown', function () {
     }
 });
 
+
+inputEmail.addEventListener('keyup', function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        validateEmail();
+    }
+});
+
 btnSendEmail.addEventListener('click', function () {
     validateEmail();
 });
